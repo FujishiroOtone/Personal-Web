@@ -1,0 +1,140 @@
+html {
+	font-size: 16px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	padding-top: 100px;
+	background-color: #ececec;
+}
+
+.backtop {
+	display: none;
+	position: fixed;
+	bottom: 30px;
+	right: 0;
+	width: 5%;
+	height: 0;
+	background: url(../images/design/backtop.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	padding-bottom: 5%;
+}
+
+
+.leftbox {
+	float: left;
+	overflow: hidden;
+	width: 70%;
+}
+
+.rightbox {
+	float: right;
+	width: 28%;
+	color: #080808;
+	overflow: hidden;
+}
+
+@media only screen and (max-width:959px) {
+	.rightbox {
+		display: none;
+	}
+	.leftbox {
+		width: 100%;
+	}
+}
+
+
+
+.info {
+	width: 100%;
+	background: #FFF;
+	border-radius: 10px;
+	overflow: hidden;
+	padding: 10px;
+}
+
+.title_1 {
+	text-align: center;
+	position: relative;
+	margin: 20px;
+	font-weight: bold;
+}
+
+.title_1:before {
+	content: "";
+	width: 20%;
+	height: 2px;
+	background: #000;
+	position: absolute;
+	left: 0;
+	bottom: 8px
+}
+
+.title_1:after {
+	content: "";
+	width: 20%;
+	height: 2px;
+	background: #000;
+	position: absolute;
+	right: 0;
+	bottom: 8px
+}
+
+.about {
+	padding: 10px;
+}
+
+.about p {
+	font-size: 1rem;
+	background: #ececec;
+	margin: 5px 0;
+	padding: 5px;
+	border-radius: 5px;
+	text-shadow: rgba(255, 255, 255, 0.3) 0px 1px 0px;
+}
+
+.avatar {
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+	border-radius: 50px;
+	margin: auto;
+}
+
+.avatar img {
+	width: 100px;
+	height: 100px;
+}
+
+.img {
+	width: 100%;
+	height: auto;
+}
+
+.newtext {
+	width: 100%;
+	background: #FFF;
+	border-radius: 10px;
+	overflow: hidden;
+	padding: 20px;
+}
+
+.title_2 {
+	line-height: 24px;
+	height: 24px;
+	font-size: 14px;
+	border-bottom: #000 2px solid;
+	font-weight: bold;
+}
+
+.title_3{
+	 padding: 0 10px;
+    line-height: 40px;
+    height: 40px;
+    font-size: 18px;
+    border-bottom: #000 2px solid;
+    position: relative;
+}

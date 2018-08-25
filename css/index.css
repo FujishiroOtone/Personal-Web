@@ -209,3 +209,10 @@ ul,li{
     border-bottom: #000 2px solid;
     position: relative;
 }
+.truth{
+	background-color: #000000;
+	color: #000000;
+}
+.truth:hover{
+	color: #FFFFFF;
+}

@@ -60,7 +60,7 @@
 				&nbsp;>&nbsp;
 				<a href="board.html">留言板</a>
 			</h4>
-			<div id="board">
+			<!-- <div id="board">
 				<br />
 				<form id="some">
 					<input id="username" type="text" class="form-control" placeholder="用户名">
@@ -73,7 +73,28 @@
 						<input class="btn btn-danger" type="reset" value="重置">
 					</p>
 				</form>
-			</div>
+			</div> -->
+			<!-- Gitalk 评论 start  -->
+
+			<!-- Link Gitalk 的支持文件  -->
+			<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+			<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
+			<div id="gitalk-container"></div>
+			<script type="text/javascript">
+				var gitalk = new Gitalk({
+
+					// gitalk的主要参数
+					clientID: `34fbd38e0c2790373d66`,
+					clientSecret: `e483e252e5b3cecf0c0b59415dbbae3de70a377d`,
+					repo: `Personal-Web`,
+					owner: 'FujishiroOtone',
+					admin: ['FujishiroOtone'],
+					id: 'window.location.pathname',
+
+				});
+				gitalk.render('gitalk-container');
+			</script>
+			<!-- Gitalk end -->
 		</div>
 	</div>
 	<!-- Gitalk 评论 start  -->

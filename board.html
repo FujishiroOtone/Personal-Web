@@ -24,7 +24,7 @@
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-					aria-expanded="false">
+				    aria-expanded="false">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -54,44 +54,65 @@
 		</div>
 	</nav>
 	<div class="container t-box" style="animation: 0.7s top-transparent-bounce ease; margin: 0 auto;">
-	<div class="newtext">
-		<h4 class="title_2">您的位置：
-		<a href="/">首页</a>
-		&nbsp;>&nbsp;
-		<a href="board.html">留言板</a>
-		</h4>
-	<div id="board">
-		<br />
-		<form id="some">
-			<input id="username" type="text" class="form-control" placeholder="用户名">
-			<br />
-			<textarea id="text" class="form-control" rows="10" placeholder="此处留言..."></textarea>
-			<br />
+		<div class="newtext">
+			<h4 class="title_2">您的位置：
+				<a href="/">首页</a>
+				&nbsp;>&nbsp;
+				<a href="board.html">留言板</a>
+			</h4>
+			<div id="board">
+				<br />
+				<form id="some">
+					<input id="username" type="text" class="form-control" placeholder="用户名">
+					<br />
+					<textarea id="text" class="form-control" rows="10" placeholder="此处留言..."></textarea>
+					<br />
 
-			<p style="text-align: center;">
-				<input class="btn btn-success" type="submit" value="提交留言" onclick="textcheck()">
-				<input class="btn btn-danger" type="reset" value="重置">
-			</p>
-		</form>
+					<p style="text-align: center;">
+						<input class="btn btn-success" type="submit" value="提交留言" onclick="textcheck()">
+						<input class="btn btn-danger" type="reset" value="重置">
+					</p>
+				</form>
+			</div>
 		</div>
-		</div>
-		</div>
-			<script>
-				$(window).scroll(function () {
-					var sc = $(window).scrollTop();
-					var wd = $(window).height();
-					if (sc >= wd) {
-						$(".backtop").css("display", "block");
-					} else {
-						$(".backtop").css("display", "none");
-					}
-				})
-				$(".backtop").click(function () {
-					$('body,html').animate({
-						scrollTop: 0
-					}, 500);
-				})
-			</script>
+	</div>
+	<!-- Gitalk 评论 start  -->
+
+	<!-- Link Gitalk 的支持文件  -->
+	<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+	<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
+	<div id="gitalk-container"></div>
+	<script type="text/javascript">
+		var gitalk = new Gitalk({
+
+			// gitalk的主要参数
+			clientID: `34fbd38e0c2790373d66`,
+			clientSecret: `e483e252e5b3cecf0c0b59415dbbae3de70a377d`,
+			repo: `Personal-Web`,
+			owner: 'FujishiroOtone',
+			admin: ['FujishiroOtone'],
+			id: 'window.location.pathname',
+
+		});
+		gitalk.render('gitalk-container');
+	</script>
+	<!-- Gitalk end -->
+	<script>
+		$(window).scroll(function () {
+			var sc = $(window).scrollTop();
+			var wd = $(window).height();
+			if (sc >= wd) {
+				$(".backtop").css("display", "block");
+			} else {
+				$(".backtop").css("display", "none");
+			}
+		})
+		$(".backtop").click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 500);
+		})
+	</script>
 </body>
 
 </html>

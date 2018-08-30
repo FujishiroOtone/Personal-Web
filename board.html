@@ -84,30 +84,30 @@
 					</p>
 				</form>
 			</div> -->
+			<!-- Gitalk 评论 start  -->
 
+			<!-- Link Gitalk 的支持文件  -->
+			<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+			<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
+			<div id="gitalk-container"></div>
+			<script type="text/javascript">
+				var gitalk = new Gitalk({
+
+					// gitalk的主要参数
+					clientID: `cf2dc2bdd069a8b6647e`,
+					clientSecret: `bcaea1befb3237aaceaa269082f0d4e7d694a76f`,
+					repo: `Personal-Web`,
+					owner: 'FujishiroOtone',
+					admin: ['FujishiroOtone'],
+					id: 'board',
+					distractionFreeMode: true,
+
+				});
+				gitalk.render('gitalk-container');
+			</script>
+			<!-- Gitalk end -->
 		</div>
-					<!-- Gitalk 评论 start  -->
-		
-					<!-- Link Gitalk 的支持文件  -->
-					<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-					<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
-					<div id="gitalk-container"></div>
-					<script type="text/javascript">
-						var gitalk = new Gitalk({
-		
-							// gitalk的主要参数
-							clientID: `cf2dc2bdd069a8b6647e`,
-							clientSecret: `bcaea1befb3237aaceaa269082f0d4e7d694a76f`,
-							repo: `Personal-Web`,
-							owner: 'FujishiroOtone',
-							admin: ['FujishiroOtone'],
-							id: 'board',
-							distractionFreeMode: true,
-		
-						});
-						gitalk.render('gitalk-container');
-					</script>
-					<!-- Gitalk end -->
+
 	</div>
 
 	<script>

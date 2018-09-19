@@ -1,0 +1,86 @@
+<!DOCTYPE >
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="icon" href="images/design/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="css/model.min.css" />
+	<style>
+		#enter {
+			text-align: center;
+			margin: 30px;
+			overflow: hidden;
+		}
+
+		#enter img {
+			margin: auto;
+			min-height: 100%;
+			width: 50%;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: 0.3s;
+		}
+
+		#enter img:hover {
+			opacity: 0.7;
+		}
+		@media only screen and (max-width:726px)
+		{
+			#enter img{
+				width: 75%;
+			}
+			a{
+				font-size: 24px;
+			}
+		}
+		@media only screen and (max-width:500px)
+		{
+			#enter img{
+				width: 100%;
+			}
+			a{
+				font-size: 32px;
+			}
+		}
+		p{
+			margin: 10px;
+		}
+		a{
+			color: darkgrey;
+			font-size: 14px;
+			font-weight: bold;
+		}
+		a:link,a:active,a:visited,a:hover{
+			color: darkgrey;
+			text-decoration: none;
+		}
+		a:hover{
+			cursor: pointer;
+		}
+		.bg_content {
+		  position: fixed;
+		  top: 0;
+		  z-index: -1;
+		  width: 100%;
+		  height: 100%;
+		}
+	</style>
+	<title>世界大门の入口</title>
+</head>
+
+<body>
+	<!--页面动画-->
+	<div class="bg_content">
+		<canvas id="canvas"></canvas>
+	</div>
+	<script src="js/canvas-nest.min.js" type="text/javascript" charset="utf-8"></script>
+	<div id="enter" class="t-box container" style="animation: 2s top-transparent ease;">
+		<a href="https://blog.fujishiro.cn"><img src="images/enter.jpg" /></a>
+	</div>
+	<p align="center">
+		<a href="http://www.miitbeian.gov.cn">粤ICP备18106231号</a>
+	</p>
+</body>
+
+</html>
